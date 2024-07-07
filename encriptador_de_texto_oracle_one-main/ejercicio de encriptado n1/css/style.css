@@ -1,0 +1,230 @@
+:root{
+    --background:        #F3F5FC;
+    --background-assets: #FFFFFF;
+    --button-on:         #0A3871;
+    --button-off :       #D8DFE8;
+    --text:              #0A3871;
+    --text-bold:         #343A40;
+
+
+    --text-3xs:     12px;
+    --text-2xs:     16px;
+    --text-x:       32px;
+    --text-s:       14px;
+    --text-m:       16px;
+    --text-l:       18px;
+    --text-xl:      20px;
+    --text-2xl:     24px;
+    --text-3xl:     30px;
+    --text-4xl:     36px;
+    --text-5xl:     48px;
+    --text-6xl:     24px;
+
+
+  --text-light:         var(--text-3xl);
+  --text-caption:       var(--text-xs);
+  --text-note:          var(--text-x);
+  --text-base:          var(--text-m);
+  --text-subheader:     var(--text-2xl);
+  --text-title:         var(--text-3xl);
+  --text-headline:      var(--text-4xl);
+  --text-display:       var(--text-5xl);
+  --text-bold:          var(--text-6xl);
+}
+
+
+
+*{
+    margin:   0px;
+    padding:  0px;
+    
+}
+
+body{
+    position:           relative;
+    width:              100%; /* Cambiado */
+    height:             100%; /* Cambiado */
+    background:         var(--background);
+
+}
+
+
+.logo{
+    display:                flex;
+    flex-direction:         column;
+    align-items:            flex-start;
+    padding:                0px;
+    gap:                    40px;
+    position:               absolute;
+    width:                  120px;
+    height:                 48px;
+    left:                   40px;
+    top:                    40px;
+}
+
+
+
+.container-muneco{
+    position:               absolute;
+    width:                  400px;
+    height:                 944px;
+    left:                   800px;
+    top:                    40px;
+    background-size:        cover,contain,100% auto,100% 500px;
+    box-shadow:             0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius:          32px;
+    z-index:               -2;
+}
+
+.muneco{
+    position:   absolute;
+    width:      336px;
+    height:     304px;
+    left:       50px;
+    top:        250px;
+}
+
+#text,
+input{
+    position:           absolute;
+    width:              680px;
+    height:             288px;
+    left:               80px;
+    top:                168px;
+    font-family:       'verdana', arial;
+    font-style:         normal;
+    font-weight:        400;
+    font-size:          32px;
+    line-height:        150%;
+    color:           #0A3871;
+    border:             none;
+    background:         var(--background);
+}
+
+
+
+label,
+#result{
+    position:           absolute;
+    height:             781px;
+    width:              336px;
+    left:               835px;
+    top:                72px;
+    font-family:       'Inter';
+    font-style:         normal;
+    font-weight:        400;
+    font-size:          24px;
+    line-height:        150%;
+    color:           #495057;
+    border:             none;
+    background-color:   var(--background-assets);
+}
+
+.copiar {
+    display:                flex;
+    flex-direction:         row;
+    justify-content:        center; /* Centrar horizontalmente */
+    align-items:            center; /* Centrar verticalmente */
+    padding:                24px;
+    gap:                    8px;
+    position:               absolute;
+    width:                  336px;
+    height:                 67px;
+    left:                   840px;
+    top:                    885px;
+    border:                 1px solid #0A3871;
+    border-radius:          24px;
+    font-family:           'Verdana', arial, helvetica;
+    font-style:             normal;
+    font-weight:            400px;
+    font-size:              16px;
+    line-height:            19px;
+    text-align:             center;
+    color:                  var(--text);
+    flex:                   none;
+}
+
+.copiar:hover{
+    background: var(--button-on);
+    color:      var(--background-assets);
+}
+
+
+#option{
+    display:                flex;
+    flex-direction:         row;
+    align-items:            flex-start;
+    padding:                24px;
+    gap:                    8px;
+    width:                  328px;
+    height:                 67px;
+    background:          #0A3871;
+    border-radius:          24px;
+    flex:                   none;
+    order:                  0;
+    flex-grow:              0;
+}
+
+
+#encrypt-btn{
+    display:                flex;
+    flex-direction:         row;
+    justify-content:        center; /* Centrar horizontalmente */
+    align-items:            center; /* Centrar verticalmente */
+    padding:                24px;
+    gap:                    8px;
+    position:               absolute;
+    width:                  336px;
+    height:                 67px;
+    left:                   1px;
+    top:                    885px;
+    border:                 1px solid #0A3871;
+    border-radius:          24px;
+    font-family:           'Verdana', arial, helvetica;
+    font-style:             normal;
+    font-weight:            400px;
+    font-size:              16px;
+    line-height:            19px;
+    text-align:             center;
+    color:                  var(--background);
+    flex:                   none;
+    background:             var(--button-on);
+}
+
+
+#encrypt-btn:hover{
+    background: var(--button-off);
+    color:      var(--text);
+}
+
+
+#decrypt-btn{
+    display:                flex;
+    flex-direction:         row;
+    justify-content:        center; /* Centrar horizontalmente */
+    align-items:            center; /* Centrar verticalmente */
+    padding:                24px;
+    gap:                    8px;
+    position:               absolute;
+    width:                  336px;
+    height:                 67px;
+    left:                   400px;
+    top:                    885px;
+    border:                 1px solid #0A3871;
+    border-radius:          24px;
+    font-family:           'Verdana', arial, helvetica;
+    font-style:             normal;
+    font-weight:            400px;
+    font-size:              16px;
+    line-height:            19px;
+    text-align:             center;
+    color:                  var(--text);
+    flex:                   none;
+    background:             var(--button-off);
+
+}
+
+#decrypt-btn:hover{
+    background: var(--button-on);
+    color:      var(--background)
+}
